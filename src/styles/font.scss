@@ -1,0 +1,18 @@
+@mixin font-face($name, $local-name, $file-path, $fot-weight, $font-style) {
+  @font-face {
+    font-family: $name;
+    src:
+      local($local-name),
+      url($file-path + '.woff2') format('woff2'),
+      url($file-path + '.woff') format('woff'),
+      url($file-path + '.ttf') format('truetype');
+    font-weight: $fot-weight;
+    font-style: $font-style;
+  }
+}
+
+@include font-face('Exo 2', 'Exo2-Light', '../assets/fonts/Exo2-Light', 300, normal);
+@include font-face('Exo 2', 'Exo2-Regular', '../assets/fonts/Exo2-Regular', normal, normal);
+@include font-face('Exo 2', 'Exo2-Bold', '../assets/fonts/Exo2-Bold', bold, normal);
+@include font-face('Montserrat', 'Montserrat-Regular', '../assets/fonts/Montserrat-Regular', normal, normal);
+@include font-face('Montserrat', 'Montserrat-Bold', '../assets/fonts/Montserrat-Bold', bold, normal);
