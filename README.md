@@ -1,5 +1,15 @@
-# D사 채용 - 과제 전형
+# D사 채용 - 과제 전형  
+https://corp-d.netlify.app/
 
+## 구동 방법
+
+`$ npm install` 필요한 패키지를 설치합니다.  
+`$ npm run dev` 개발 서버를 시작합니다.
+
+## 사용 기술
+React, TypeScript, styled-components, SCSS
+
+## 폴더 구조
 [`componsnets`](/src/components/)  
 디자인 시스템을 적용하여 일관된 디자인 요소들을 쉽게 사용할 수 있도록 코드를 작성하였고, 특히 재사용이 가능하도록 컴포넌트를 구성하였습니다.
 
@@ -8,15 +18,6 @@
 
 [`utils`](/src/utils/)  
 타입 정의나 정규 표현식과 같은 재사용이 많은 부분은 공통으로 사용할 수 있도록 구성하였습니다.
-
-## 구동 방법
-
-`$ npm install` 필요한 패키지를 설치합니다.  
-`$ npm run dev` 개발 서버를 시작합니다.
-
-## 기술
-
-React, TypeScript, styled-components, SCSS
 
 ## 구현 요건
 
@@ -34,7 +35,7 @@ React, TypeScript, styled-components, SCSS
 - [`ProfilesSection.tsx`](/src/pages/HomePage/components/ProfilesSection/ProfilesSection.tsx)  
   첫번째 색션의 데이터 배열을 랜덤함수를 사용하여 정렬하였습니다.
 
-### 3. 두번째 섹션 - 이미지 랜덤 API를 이용해 임의의 이미지를 삽입하고, 같은 브라우저로 페이지를 다시 열거나 새로고침 해도 기존 이미지가 변경되지 않도록 구현
+### 3. 두번째 섹션  - 랜덤 이미지 API를 이용해 임의의 이미지를 삽입하고, 같은 브라우저로 페이지를 다시 열거나 새로고침 해도 기존 이미지가 변경되지 않도록 구현
 
 - [`useFetchImage.tsx`](/src/hooks/useFetchImage.tsx)  
   localStorage(브라우저)에 이미지가 없다면, 랜덤으로 이미지를 불러오고 localStorage에 저장합니다.  
